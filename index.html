@@ -14,35 +14,35 @@
       <kbd>A</kbd>
       <span class="sound">clap</span>
     </div>
-    <div key="s" class="key">
+    <div key="s" class="key" onclick="playClick('s')">
       <kbd>S</kbd>
       <span class="sound">hihat</span>
     </div>
-    <div key="d" class="key">
+    <div key="d" class="key" onclick="playClick('d')">
       <kbd>D</kbd>
       <span class="sound">kick</span>
     </div>
-    <div key="f" class="key">
+    <div key="f" class="key" onclick="playClick('f')">
       <kbd>F</kbd>
       <span class="sound">openhat</span>
     </div>
-    <div key="g" class="key">
+    <div key="g" class="key" onclick="playClick('g')">
       <kbd>G</kbd>
       <span class="sound">boom</span>
     </div>
-    <div key="h" class="key">
+    <div key="h" class="key" onclick="playClick('h')">
       <kbd>H</kbd>
       <span class="sound">ride</span>
     </div>
-    <div key="j" class="key">
+    <div key="j" class="key" onclick="playClick('j')">
       <kbd>J</kbd>
       <span class="sound">snare</span>
     </div>
-    <div key="k" class="key">
+    <div key="k" class="key" onclick="playClick('k')">
       <kbd>K</kbd>
       <span class="sound">tom</span>
     </div>
-    <div key="l" class="key">
+    <div key="l" class="key" onclick="playClick('l')">
       <kbd>L</kbd>
       <span class="sound">tink</span>
     </div>
@@ -78,14 +78,7 @@ function playClick(int){
   console.log(int);
 };
 
-const buttons = document.querySelectorAll('div.key')
 
-for (let button of buttons) {
-  button.addEventListener("click",playAll);
-}
-function playAll(){
-  console.log(this.className);
-};
 
 
 const keys = document.querySelectorAll('.key');
